@@ -1,15 +1,15 @@
-
+#NOMBRE DEL PIPELINE
 name: CI DevOps Practica
-
+#EL ON SIGNIFICA QUE SE VA A EJECUTAR AUTOMATICAMENTE CADA VEZ QUE SE HAGA PUSH
 on:
   push:
+#SE VA A EJECUTAR TODO LO DE LA RAMA MAIN
     branches: ["main"]
-
+#TRABAJOS QUE SE VAN A REALIZAR
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    
-
+  build: #COMPILAR
+    runs-on: ubuntu-latest #SISTEMA OPERATIVO DONDE SE COMPILA
+  
     steps:
     
     - name: Checkout código
